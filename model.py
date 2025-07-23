@@ -285,10 +285,4 @@ full_pipeline = Pipeline(steps=[
 joblib.dump(full_pipeline, 'model_pipeline.pkl')
 print("✅ Full pipeline saved as model_pipeline.pkl")
 
-'''
-# تحميل النموذج المحفوظ
-loaded_model = joblib.load('final_model.pkl')
 
-# استخدامه في التنبؤ
-prediction = loaded_model.predict(X_test)
-'''
