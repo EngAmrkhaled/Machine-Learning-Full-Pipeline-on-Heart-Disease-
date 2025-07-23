@@ -1,0 +1,77 @@
+📌 Model: Logistic Regression
+              precision    recall  f1-score   support
+
+         0.0       0.89      0.86      0.88        29
+         1.0       0.88      0.91      0.89        32
+
+    accuracy                           0.89        61
+   macro avg       0.89      0.88      0.88        61
+weighted avg       0.89      0.89      0.89        61
+
+AUC Score: 0.92
+
+📌 Model: Decision Tree
+              precision    recall  f1-score   support
+
+         0.0       0.73      0.76      0.75        29
+         1.0       0.77      0.75      0.76        32
+
+    accuracy                           0.75        61
+   macro avg       0.75      0.75      0.75        61
+weighted avg       0.75      0.75      0.75        61
+
+AUC Score: 0.75
+
+📌 Model: Random Forest
+              precision    recall  f1-score   support
+
+         0.0       0.84      0.93      0.89        29
+         1.0       0.93      0.84      0.89        32
+
+    accuracy                           0.89        61
+   macro avg       0.89      0.89      0.89        61
+weighted avg       0.89      0.89      0.89        61
+
+AUC Score: 0.94
+
+📌 Model: SVM
+              precision    recall  f1-score   support
+
+         0.0       0.60      0.90      0.72        29
+         1.0       0.83      0.47      0.60        32
+
+    accuracy                           0.67        61
+   macro avg       0.72      0.68      0.66        61
+weighted avg       0.72      0.67      0.66        61
+
+AUC Score: 0.77
+
+📊 K-Means Cluster vs Actual Target:
+
+target          0.0  1.0
+kmeans_cluster
+0                13  100
+1               151   39
+
+📊 Hierarchical Cluster vs Actual Target:
+
+target      0.0  1.0
+hc_cluster
+0            35   81
+1           129   58
+
+✅ best parameters
+{'n_estimators': 100, 'min_samples_split': 5, 'min_samples_leaf': 2, 'max_depth': 10}
+
+📊 Evaluation of Tuned Model:
+
+              precision    recall  f1-score   support
+
+         0.0       0.82      0.97      0.89        29
+         1.0       0.96      0.81      0.88        32
+
+    accuracy                           0.89        61
+   macro avg       0.89      0.89      0.89        61
+weighted avg       0.90      0.89      0.88        61
+
+AUC Score: 0.95
